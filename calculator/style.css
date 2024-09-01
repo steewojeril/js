@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+.calculater{
+    background-color: rgb(71, 91, 91);
+    width: 100%;
+    min-width: 440px;
+    max-width: 440px;
+    height: 402px;
+    border-radius: 10px;
+    margin: 50px auto 0; /* Center horizontally and add top margin */    margin-top: 50px;
+    padding: 40px;
+
+    /* h-offset v-offset blur spread color */
+    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.5), /*for t & l*/
+                inset -5px -5px 10px 5px rgba(0, 0, 0, 0.5); /*for b & r*/
+}
+
+.row{
+    display: flex;
+    /* column-gap: 40px; */
+    justify-content: space-between;
+    margin: 10px;
+}
+.button{
+    width: 75px;
+    height: 47px;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+
+}
+
+.ac{
+    background-color: orange;
+    color: white;
+}
+.ac:hover{
+    background-color: rgb(163, 109, 9);
+}
+.eq{
+    background-color: orange;
+    color: white;
+}
+.eq:hover{
+    background-color: rgb(163, 109, 9);
+}
+
+
+
+#screen{
+    /* to disable editing on input  */
+    background-color: #abfcab;
+    /* pointer-events: none; */
+    width: 400px;
+    height: 46px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 600;
+    box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.9), /*for t & l*/
+                inset -1px -1px 5px 1px rgba(0, 0, 0, 0.9); /*for b & r*/
+
+}
+
+
+
+
+
+
+  
+
+
+  

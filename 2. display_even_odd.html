@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd or even</title>
+    <script>
+        function check() {
+            var num = document.getElementById("inp").value;
+            document.getElementById("display_here").innerHTML = num;
+
+
+            // normally setimeout nte avasyam illa . work oaavendathaanu but ivede work aaanilla. so used seTimeout
+            if (num % 2 == 0) {
+                setTimeout(function() {alert("even")},0);
+            } else {
+                alert("odd")
+            }
+        }
+
+    </script>
+
+        
+</head>
+
+<body>
+    <input id="inp" type="number">
+    <button onclick="check()">Check</button>
+    <h2 id="display_here"></h2>
+
+
+</body>
+
+</html>

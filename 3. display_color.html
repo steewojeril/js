@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display color</title>
+    <style>
+        #screen{
+            width: 30vw;
+            height: 30vh;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="screen"></div>
+        <div>
+            <button onclick="change_color('green')">Green</button>
+            <button onclick="change_color('red')">Red</button>
+            <button onclick="change_color('blue')">Blue</button>
+            <button onclick="change_color('yellow')">Yellow</button>
+        </p>
+    </div>
+
+
+    <script>
+
+        function change_color(color){
+            document.getElementById("screen").style.background = color
+        }
+
+    </script>
+    
+    
+</body>
+</html>
